@@ -1,0 +1,26 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+data = np.loadtxt('graphene_bands.dat.gnu')
+
+k = np.unique(data[:, 0])
+bands = np.reshape(data[:, 1], (-1, len(k)))
+
+for band in range(len(bands)):
+    plt.plot(k, bands[band, :], linewidth=1, alpha=0.5, color='k')
+plt.xlim(min(k), max(k))
+
+# Fermi energy
+plt.axhline(0.9097, linestyle=(0, (8, 10)), linewidth=0.75, color='k', alpha=0.5)
+# High symmetry k-points (check bands_pp.out)
+plt.axvline(0.6667, linewidth=0.75, color='k', alpha=0.5)
+plt.axvline(1, linewidth=0.75, color='k', alpha=0.5)
+# text labels
+plt.xticks(ticks= [0, 0.6667, 1.2440, 1.5774], labels=['K', r'$\Gamma$', 'M', 'K'])
+plt.ylabel("Energy (eV)")
+#plt.xlim(0.666698, 0.666701)
+#plt.ylim(0.909595, 0.909605)
+plt.ylim(-22, 12)
+plt.tight_layout()
+plt.savefig("graphene.png", dpi=300)
+#plt.show()

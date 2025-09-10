@@ -1,0 +1,44 @@
+&CONTROL
+  calculation = 'scf',
+  prefix      = 'graphene',
+  outdir      = './tmp/',
+  pseudo_dir  = '../../pseudos/',
+  etot_conv_thr = 1e-6,
+  forc_conv_thr = 1e-5,
+  tstress = .true.,
+  tprnfor = .true.,
+  verbosity='high',
+  nstep=1000,
+/
+
+&SYSTEM
+  ibrav     = 4,
+  celldm(1) = 4.66041506,
+  celldm(3) = 5.990434007,
+  nat  = 2,
+  ntyp = 1,
+  ecutwfc = 45.0,
+  ecutrho = 450.0,
+  nbnd = 8
+  occupations = 'fixed',
+  smearing = 'gaussian',
+  degauss = 1.0d-4,
+/
+
+&ELECTRONS
+  conv_thr = 1.0d-10
+  mixing_beta = 0.3
+/
+
+&IONS
+/
+
+ATOMIC_SPECIES
+  C  12.0107 C.pbe-n-kjpaw_psl.1.0.0.UPF
+
+ATOMIC_POSITIONS alat
+  C    0.000000    0.0000000      0.000000
+  C    0.000000    0.5783938477   0.000000
+
+K_POINTS automatic
+  48 48 1   0 0 0

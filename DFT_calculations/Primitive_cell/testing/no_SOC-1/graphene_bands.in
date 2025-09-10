@@ -1,0 +1,41 @@
+&CONTROL
+  calculation = 'bands',
+  prefix      = 'graphene',
+  outdir      = './tmp/',
+  pseudo_dir  = '../pseudos/',
+  etot_conv_thr = 1e-6,
+  forc_conv_thr = 1e-5,
+  tstress = .true.,
+  tprnfor = .true.,
+/
+
+&SYSTEM
+  ibrav     = 4,
+  celldm(1) = 4.66041506,
+  celldm(3) = 5.990434007,
+  nat  = 2,
+  ntyp = 1,
+  ecutwfc = 45.0,
+  ecutrho = 450.0,
+  nbnd=20
+!  occupations = 'tetrahedra'
+/
+
+&ELECTRONS
+  conv_thr = 1.0d-8
+  mixing_beta = 0.7
+/
+
+ATOMIC_SPECIES
+  C  12.0107 C.pbe-n-kjpaw_psl.1.0.0.UPF
+
+ATOMIC_POSITIONS {alat}
+  C    0.000000    0.0000000      0.000000
+  C    0.000000    0.5783938477   0.000000
+
+K_POINTS {crystal_b}
+4
+  0.0000000000     0.0000000000     0.0000000000     1000  ! Gamma
+  0.3333333333     0.3333333333     0.0000000000     1000  ! K
+  0.0000000000     0.5000000000     0.0000000000     1000  ! M
+  0.0000000000     0.0000000000     0.0000000000     0   ! Gamma
