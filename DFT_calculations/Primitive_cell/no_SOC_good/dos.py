@@ -24,10 +24,15 @@ plt.xlabel('Energy (eV)', fontsize=16)
 plt.ylabel('DOS (States/eV)', fontsize=16)
 #plt.title('Density of States for Graphene (rescaled energy)')
 #plt.grid(True)
-#plt.ylim(0, 0.9)
-#plt.xlim(-2.5, 2)
-plt.xlim(-20, 15)
-plt.ylim(0, 1.85)
+
+# check
+#plt.xlim(-20, 15)
+#plt.ylim(0, 1.85)
+
+#check 1
+plt.xlim(-2.8, 2)
+plt.ylim(0, 0.8)
+
 plt.tight_layout()
 plt.savefig("graphene_dos.png", dpi=300)
 #plt.show()
