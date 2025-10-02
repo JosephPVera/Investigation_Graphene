@@ -2,32 +2,30 @@
 # Written by Joseph P.Vera
 # 2024-11
 
-import numpy as np
 import matplotlib.pyplot as plt
+import numpy as np
 
-# Load the file (skip the header line with column names)
-data = np.loadtxt("information.dat", skiprows=1)
+# Load data, skipping the header (line starting with #)
+data = np.loadtxt("information.dat", comments="#")
 
-# Extract columns
-ENCUT = data[:, 0]
-Pristine = data[:, 1]
-Increased = data[:, 2]
-Decreased = data[:, 3]
-
-# Compute relative energies
-rel_increased = np.abs(Increased - Pristine)
-rel_decreased = np.abs(Decreased - Pristine)
+# Split into columns
+encut = data[:, 0]   # First column = ENCUT
+energy = data[:, 1]  # Second column = Total energy
 
 # Plot
-plt.figure(figsize=(8,6))
-plt.plot(ENCUT, rel_increased, marker='o', label='|Increased - Pristine|', color="xkcd:blue")
-plt.plot(ENCUT, rel_decreased, marker='s', label='|Decreased - Pristine|', color="xkcd:red")
+#plt.figure(figsize=(7,5))
+plt.plot(encut, energy, marker="o", linestyle="-", color="b", label="Total Energy")
 
+# Labels and title
 plt.xlabel("ENCUT (Ry)", fontsize=12)
-plt.ylabel("Relative energy (Ry)", fontsize=12)
-plt.title("Relative Energy vs ENCUT", fontsize=14)
+plt.ylabel("Total Energy (Ry)", fontsize=12)
+plt.title("ENCUT vs Total Energy", fontsize=14)
+
+# Grid and legend
+#plt.grid(True, linestyle="--", alpha=0.6)
 plt.legend()
-#plt.grid(True, linestyle='--', alpha=0.6)
+
+# Show the plot
 plt.tight_layout()
 plt.savefig("convergence_encut.png", dpi=150)
 #plt.show()
