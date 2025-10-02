@@ -23,7 +23,7 @@ plt.axvline(0.6667, linewidth=0.2, color='xkcd:black')
 plt.axvline(1.244, linewidth=0.2, color='xkcd:black')
 
 # text labels
-plt.xticks(ticks= [0, 0.6667, 1.244, 1.5774], labels=[r'$\Gamma$', 'K', 'M', r'$\Gamma$'], fontsize=12)
+plt.xticks(ticks= [0, 0.6667, 1.244, 1.5774], labels=['K', r'$\Gamma$', 'M', 'K'], fontsize=12)
 plt.ylabel("Energy (eV)", fontsize=14)
 #plt.xlim(0.666698, 0.666701)
 #plt.ylim(0.909595, 0.909605)
