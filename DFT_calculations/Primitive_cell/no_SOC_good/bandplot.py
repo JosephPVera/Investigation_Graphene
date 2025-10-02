@@ -27,13 +27,13 @@ plt.xticks(ticks= [0, 0.6667, 1.0000, 1.5774], labels=[r'$\Gamma$', 'K', 'M', r'
 plt.ylabel("Energy (eV)", fontsize=14)
 #plt.ylim(-20, 10)
 
-# check the cones
-#plt.xlim(0.6666998, 0.6667002)
+# check the cones -- 2 \mu eV
+#plt.xlim(0.66669992, 0.66670007)
 #plt.ylim(-0.000001, 0.000001)
 
-# check new cones
-plt.xlim(0.66669998, 0.666700017)
-plt.ylim(-0.00000025, 0.00000025)
+# check new cones -- 0.4 \mu eV
+plt.xlim(0.666699984, 0.666700014)
+plt.ylim(-0.0000002, 0.0000002)
 
 plt.tight_layout()
 plt.savefig("graphene.png", dpi=200, bbox_inches='tight')
