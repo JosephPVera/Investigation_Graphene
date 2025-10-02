@@ -26,6 +26,7 @@ plt.axvline(1.0000, linewidth=0.2, color='xkcd:black')
 plt.xticks(ticks= [0, 0.6667, 1.0000, 1.5774], labels=[r'$\Gamma$', 'K', 'M', r'$\Gamma$'], fontsize=12)
 plt.ylabel("Energy (eV)", fontsize=14)
 #plt.ylim(-20, 10)
+#plt.ylim(-10, 5)
 
 # check the cones -- 2 \mu eV
 #plt.xlim(0.66669992, 0.66670007)
