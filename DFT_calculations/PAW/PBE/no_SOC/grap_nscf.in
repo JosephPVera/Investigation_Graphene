@@ -2,7 +2,7 @@
 calculation = 'nscf'
   prefix      = 'graphene',
   outdir      = './tmp/',
-  pseudo_dir  = '../../pseudos/',
+  pseudo_dir  = '../../../../pseudos/',
   tprnfor = .true.,
   tstress = .true.,
   forc_conv_thr = 1.0d-6,

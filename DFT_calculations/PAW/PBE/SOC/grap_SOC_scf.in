@@ -33,6 +33,9 @@ calculation = 'scf'
   mixing_mode = 'plain'
   scf_must_converge = .TRUE.
   startingwfc = 'random'
+  diagonalization = 'david'
+  diago_david_ndim = 8
+  !diago_thr_init = 1e-02
 /
 
 ATOMIC_SPECIES

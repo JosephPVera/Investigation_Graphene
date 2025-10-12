@@ -2,7 +2,7 @@
 calculation = 'bands'
   prefix      = 'graphene',
   outdir      = './tmp/',
-  pseudo_dir  = '../../pseudos/',
+  pseudo_dir  = '../../../../pseudos/',
   tprnfor = .true.,
   tstress = .true.,
   forc_conv_thr = 1.0d-6,
@@ -21,7 +21,7 @@ calculation = 'bands'
   occupations = 'smearing'
   smearing = 'gaussian'
   degauss = 0.002
-  nbnd = 8
+  nbnd = 16
 /
 
 &ELECTRONS

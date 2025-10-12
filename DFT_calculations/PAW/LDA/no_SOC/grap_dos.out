@@ -1,5 +1,5 @@
 
-     Program DOS v.7.4.1 starts on  3Oct2025 at 23:29:34 
+     Program DOS v.7.4.1 starts on 12Oct2025 at  6:21:30 
 
      This program is part of the open-source Quantum ESPRESSO suite
      for quantum simulation of materials; please cite
@@ -11,7 +11,7 @@
      http://www.quantum-espresso.org/quote
 
      Serial version
-     1123 MiB available memory on the printing compute node when the environment starts
+     21007 MiB available memory on the printing compute node when the environment starts
 
 
      Reading xml data from directory:
@@ -29,20 +29,20 @@
      G-vector sticks info
      --------------------
      sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
-     Sum        1045     421    121               166859    42343    7091
+     Sum        1039     421    121               163611    41503    7019
 
      Using Slab Decomposition
 
 
-     negative rho (up, down):  1.243E-05 0.000E+00
+     negative rho (up, down):  1.299E-05 0.000E+00
 
      Gaussian broadening (read from input): ngauss,degauss=   0    0.007000
 
 
-     DOS          :      1.25s CPU      1.35s WALL
+     DOS          :      1.44s CPU      1.49s WALL
 
 
-   This run was terminated on:  23:29:35   3Oct2025            
+   This run was terminated on:   6:21:32  12Oct2025            
 
 =------------------------------------------------------------------------------=
    JOB DONE.
