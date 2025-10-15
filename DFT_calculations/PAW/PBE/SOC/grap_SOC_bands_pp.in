@@ -1,6 +1,6 @@
 &BANDS
 filband = 'graphene_bands.dat'
-lsym = .TRUE.
-outdir = './output/'
+lsym = .FALSE.
+outdir = './tmp/'
 prefix = 'graphene'
 /
