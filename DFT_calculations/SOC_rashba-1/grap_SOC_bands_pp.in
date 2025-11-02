@@ -1,0 +1,6 @@
+&BANDS
+filband = 'graphene_bands.dat'
+lsym = .FALSE.
+outdir = './tmp/'
+prefix = 'graphene'
+/
