@@ -3,7 +3,7 @@ plt.style.use('../../matplotlib/sci.mplstyle')
 import numpy as np
 
 # Load data
-z, V = np.loadtxt('avg.dat', usecols=(0,1), unpack=True)
+z, V = np.loadtxt('potential.dat', usecols=(0,1), unpack=True)
 
 au2a = 0.529177249 # Convert a.u. to Angstrom
 ry2ev = 13.605698066 # Convert Ry to eV
