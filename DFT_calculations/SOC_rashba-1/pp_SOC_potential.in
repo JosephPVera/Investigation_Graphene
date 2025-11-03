@@ -1,6 +1,6 @@
 &INPUTPP
-outdir   = '../tmp/'
-prefix   = 'bi-gr'
-filplot  = 'bi-gr.dat'
+outdir   = './tmp/'
+prefix   = 'graphene'
+filplot  = 'potential.dat'
 plot_num = 11
 /
