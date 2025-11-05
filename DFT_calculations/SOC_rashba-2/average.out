@@ -1,0 +1,27 @@
+
+     Program AVERAGE v.7.4.1 starts on  4Nov2025 at 22:30:24 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+         "P. Giannozzi et al., J. Chem. Phys. 152 154105 (2020);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Serial version
+     946 MiB available memory on the printing compute node when the environment starts
+
+     Reading header from file  potential.dat
+     Reading data from file  potential.dat
+     Output written to file avg.dat
+
+     AVERAGE      :      0.49s CPU      0.49s WALL
+
+
+   This run was terminated on:  22:30:25   4Nov2025            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=
