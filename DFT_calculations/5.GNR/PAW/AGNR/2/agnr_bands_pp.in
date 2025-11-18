@@ -1,0 +1,6 @@
+&BANDS
+  filband = 'AGNR_bands.dat',
+  lsym = .TRUE.,
+  outdir = './tmp/',
+  prefix = 'AGNR',
+/
