@@ -1,0 +1,6 @@
+&INPUTPP
+outdir   = './tmp/'
+prefix   = 'graphene'
+filplot  = 'potential-12.dat'
+plot_num = 12
+/

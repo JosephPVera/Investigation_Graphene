@@ -1,0 +1,80 @@
+     Message from routine get_command_line:
+     unexpected argument # 2     :-inp
+
+     Program POST-PROC v.7.4.1 starts on 17Nov2025 at 21:40:48 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+         "P. Giannozzi et al., J. Chem. Phys. 152 154105 (2020);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on     6 processors
+
+     MPI processes distributed on     1 nodes
+     R & G space division:  proc/nbgrp/npool/nimage =       6
+     10414 MiB available memory on the printing compute node when the environment starts
+
+
+     Reading xml data from directory:
+
+     ./tmp/graphene.save/
+     file C.rel-pbe-n-kjpaw_psl.0.1.UPF: wavefunction(s)  2P 2P renormalized
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min         173      70     20                27803     7050    1174
+     Max         175      71     21                27830     7077    1203
+     Sum        1045     421    121               166859    42343    7091
+
+     Using Slab Decomposition
+
+
+     negative rho (up, down):  6.939E-06 0.000E+00
+
+     Adding external electric field
+
+     Computed dipole along edir(3) : 
+        Dipole                0.0132 Ry au,          0.0336 Debye
+        Dipole field          0.0003 Ry au, 
+
+        E field amplitude [Ha a.u.]:  1.9447E-03
+        Potential amp.        0.0880 Ry
+        Total length         26.9286 bohr
+
+
+     Calling punch_plot, plot_num =  11
+
+     Adding external electric field
+
+     Computed dipole along edir(3) : 
+        Dipole                0.0132 Ry au,          0.0336 Debye
+        Dipole field          0.0003 Ry au, 
+
+        E field amplitude [Ha a.u.]:  1.9447E-03
+        Potential amp.        0.0880 Ry
+        Total length         26.9286 bohr
+
+     Writing data to file  potential-11.dat
+     Message from routine chdens:
+     namelist plot not found or invalid, exiting
+
+     POST-PROC    :      1.70s CPU      1.86s WALL
+
+
+   This run was terminated on:  21:40:49  17Nov2025            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=
