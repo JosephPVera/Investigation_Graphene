@@ -1,0 +1,55 @@
+&CONTROL
+calculation = 'nscf'
+  prefix      = 'AGNR',
+  outdir      = './tmp/',
+  pseudo_dir  = '../../../pseudos/',
+  tprnfor = .true.,
+  tstress = .true.,
+  forc_conv_thr = 1.0d-6,
+  etot_conv_thr = 1.0d-8,
+  restart_mode = 'restart',
+  verbosity = 'high',
+  wf_collect = .TRUE.,
+/
+
+&SYSTEM
+  ibrav = 0,
+  nat  = 8,
+  ntyp = 2,
+  ecutwfc = 70.0,
+  ecutrho = 700.0,
+  occupations = 'smearing'
+  smearing = 'gaussian'
+  degauss = 0.002
+/
+
+&ELECTRONS
+  conv_thr = 1e-08
+  electron_maxstep = 200
+  mixing_beta = 0.5
+  mixing_mode = 'plain'
+  scf_must_converge = .TRUE.
+  startingwfc = 'random'
+/
+
+ATOMIC_SPECIES
+C 12.011 C.pbe-n-kjpaw_psl.1.0.0.UPF
+H 1.0079 H.pbe-kjpaw_psl.1.0.0.UPF
+
+K_POINTS {automatic}
+  150 1 1 0 0 0
+
+CELL_PARAMETERS {angstrom}
+     0.0000000000000000    0.0000000000000000    4.2859656153173900
+    33.2190488041099172    0.0000000000000000    0.0000000000000000
+     0.0000000000000000   30.0883046097560971    0.0000000000000000
+
+ATOMIC_POSITIONS {angstrom}
+C  15.9439676901250387 15.0000000000000000  0.0000000000000000
+C  17.1775882449395283 15.0000000000000000  0.7122311594000000
+C  17.1775882449395283 15.0000000000000000  2.1366934782000002
+C  15.9439676901250387 15.0000000000000000  2.8489246376000001
+H  15.0000000000000000 15.0000000000000000  0.5450000000000000
+H  15.0000000000000000 15.0000000000000000  2.3039246376000002
+H  18.1215559350645634 15.0000000000000000  0.1672311594000000
+H  18.1215559350645634 15.0000000000000000  2.6816934782000001
