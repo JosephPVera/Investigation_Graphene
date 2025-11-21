@@ -1,0 +1,6 @@
+&BANDS
+  filband = 'ZGNR_bands.dat',
+  lsym = .TRUE.,
+  outdir = './tmp/',
+  prefix = 'ZGNR',
+/
