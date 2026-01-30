@@ -1,0 +1,59 @@
+
+     Program BANDS v.7.4.1 starts on 21Jan2026 at  5:28:43 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+         "P. Giannozzi et al., J. Chem. Phys. 152 154105 (2020);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on    32 processors
+
+     MPI processes distributed on     1 nodes
+     R & G space division:  proc/nbgrp/npool/nimage =      32
+     2044 MiB available memory on the printing compute node when the environment starts
+ 
+
+     Reading xml data from directory:
+
+     ../tmp/graphene.save/
+     file C.rel-pz-n-kjpaw_psl.0.1.UPF: wavefunction(s)  2P 2P renormalized
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation= PZ
+                           (   1   1   0   0   0   0   0)
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+ 
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min          32      13      3                 5102     1291     199
+     Max          33      14      4                 5129     1308     232
+     Sum        1039     421    121               163611    41503    7019
+ 
+     Using Slab Decomposition
+ 
+
+     negative rho (up, down):  1.323E-05 0.000E+00
+     Reading collected, re-writing distributed wavefunctions
+     high-symmetry point:  0.0000 0.0000 0.0000   x coordinate   0.0000
+     high-symmetry point:  0.3333 0.5774 0.0000   x coordinate   0.6667
+     high-symmetry point:  0.5000 0.2887 0.0000   x coordinate   1.0000
+     high-symmetry point:  0.0000 0.0000 0.0000   x coordinate   1.5774
+
+     Plottable bands (eV) written to file graphene_bands.dat.gnu
+     Bands written to file graphene_bands.dat
+ 
+     BANDS        :      8.55s CPU     45.93s WALL
+
+ 
+   This run was terminated on:   5:29:29  21Jan2026            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=
