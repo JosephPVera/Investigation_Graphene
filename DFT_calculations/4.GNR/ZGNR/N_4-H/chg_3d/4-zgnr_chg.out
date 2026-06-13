@@ -1,0 +1,59 @@
+
+     Program POST-PROC v.7.4.1 starts on  9Jun2026 at 19: 6:39 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+         "P. Giannozzi et al., J. Chem. Phys. 152 154105 (2020);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on    32 processors
+
+     MPI processes distributed on     1 nodes
+     R & G space division:  proc/nbgrp/npool/nimage =      32
+     40141 MiB available memory on the printing compute node when the environment starts
+ 
+
+     Reading xml data from directory:
+
+     ../tmp/ZGNR.save/
+     file C.pbe-n-kjpaw_psl.1.0.0.UPF: wavefunction(s)  2S 2P renormalized
+     file H.pbe-kjpaw_psl.1.0.0.UPF: wavefunction(s)  1S renormalized
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+ 
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min         606     243     70               193592    49003    7718
+     Max         607     245     71               193601    49011    7729
+     Sum       19405    7789   2255              6195059  1568223  247137
+ 
+     Using Slab Decomposition
+ 
+
+     negative rho (up, down):  7.597E-04 0.000E+00
+
+     Calling punch_plot, plot_num =   0
+     Writing data to file  tmp.pp
+     Reading data from file  tmp.pp
+
+     Writing data to be plotted to file charge_density.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+ 
+     POST-PROC    :     18.90s CPU     25.74s WALL
+
+ 
+   This run was terminated on:  19: 7: 5   9Jun2026            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=
