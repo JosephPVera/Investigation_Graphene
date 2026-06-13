@@ -29,7 +29,7 @@ plt.xticks(ticks= [0, 0.66666667, 1.00000000, 1.57735027], labels=[r'$\Gamma$', 
 plt.ylabel(r'Energy ($\mu$eV)', fontsize=14)
 #plt.ylim(-10, 5)
 
-plt.xlim(0.66666660, 0.66666674)
+plt.xlim(0.66666650, 0.66666684)
 plt.ylim(-0.000015, 0.000015)
 
 
