@@ -1,0 +1,10 @@
+&INPUTPP
+    prefix='graphene'
+    outdir='../tmp'
+    plot_num=0
+/
+&PLOT
+    iflag=3
+    output_format=5
+    fileout='grap_chg_3d.xsf'
+/
